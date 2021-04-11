@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+html {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 940px;
+    
+}
+
+body {
+    max-width: 940px;
+    margin-top: 25%;
+    height: 400px;
+    border-radius: 4px;
+    background-color: #abf7d9;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    animation: showslow 400ms 0.5s ease-in forwards;
+    opacity: 0;
+    
+    
+}
+
+
+body header{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+
+body section {
+    margin: 0 auto;
+    width: 400px; 
+}
+
+body section form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+body section form .entrada {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+body section form .entrada  input{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+body section form .saida {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+body section form .saida  input{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+
+
+body section .button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body section .button button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #01b86f;
+    cursor: pointer;
+    
+}
+
+
+body .horastrabalhadas {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+body .horastrabalhadas .message {
+    opacity: 0;
+    animation: showslow 400ms 0.5s ease-in forwards;
+    
+}
+
+
+
+@keyframes showslow {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+

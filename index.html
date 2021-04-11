@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bruno da Silva Castilho</title>   
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>      
+        <header>
+                <h1>Calculadora de horário de trabalho</h1>
+        </header>
+        <section>
+            <form>
+                <div class="entrada">
+                    <h3>Hora de entrada:</h3>
+                    <input type="time">            
+                </div>
+                <div class="saida">
+                    <h3>Hora de saída:</h3>
+                    <input type="time">            
+                </div>
+            </form>
+            <div class="button">
+                <button onclick="HorasTrabalhadas.mostrarHorasTrabalhadas()">Calcular</button>
+            </div>
+            
+        </section>
+        <section class="horastrabalhadas">
+        </section>     
+    </body>  
+    <script src="scripts.js"></script>
+</html>
