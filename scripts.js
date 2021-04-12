@@ -1,8 +1,13 @@
 const HorasTrabalhadas = {
     preview: document.querySelector('.horastrabalhadas'),
-    mostrarHorasTrabalhadas(){
+    mostrarHorasTrabalhadas(e){
         var entrada = document.querySelector('.entrada input').value.split(":")
         var saida = document.querySelector('.saida input').value.split(":")
+
+        if(!this.checkAllfilds(e, entrada, saida)){
+            return
+        }
+        
         
         this.removeOldMessage()
 
@@ -22,6 +27,20 @@ const HorasTrabalhadas = {
         message.classList.add('message')
         message.innerHTML = `Horas trabalhadas: ${results.horas}:${results.minutos}`
         this.preview.appendChild(message)
+    },
+    checkAllfilds(e, entrada, saida){
+        if(entrada == "" || saida ==""){
+            container = document.createElement('div')
+            container.style.position = "fixed"
+            container.classList.add('error')
+            message = document.createElement('p')
+            message.innerHTML = 'Dígite todos os campos corretamente!'
+
+            container.append(message)
+            document.querySelector('body').append(container)
+            return false
+        }
+        return true
     },
     calcularHorasTrabalhadas(entrada, saida){
         var total_entrada_minutos = parseInt(entrada.horas * 60) + parseInt(entrada.minutos)

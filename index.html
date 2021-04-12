@@ -4,30 +4,35 @@
         <meta charset="utf-8">
         <title>Bruno da Silva Castilho</title>   
         <link rel="stylesheet" href="styles.css">
-
+    
     </head>
-    <body>      
-        <header>
-                <h1>Calculadora de horário de trabalho</h1>
-        </header>
-        <section>
-            <form>
-                <div class="entrada">
-                    <h3>Hora de entrada:</h3>
-                    <input type="time">            
+    <body>  
+        <div class="card">
+            <header>
+                    <h1>Calculadora de horário de trabalho</h1>
+            </header>
+            <section>
+                <form>
+                    <div class="entrada">
+                        <h3>Hora de entrada:</h3>
+                        <input type="time">            
+                    </div>
+                    <div class="saida">
+                        <h3>Hora de saída:</h3>
+                        <input type="time">            
+                    </div>
+                </form>
+                <div class="button">
+                    <button onclick="HorasTrabalhadas.mostrarHorasTrabalhadas(event)">Calcular</button>
                 </div>
-                <div class="saida">
-                    <h3>Hora de saída:</h3>
-                    <input type="time">            
-                </div>
-            </form>
-            <div class="button">
-                <button onclick="HorasTrabalhadas.mostrarHorasTrabalhadas()">Calcular</button>
-            </div>
-            
-        </section>
-        <section class="horastrabalhadas">
-        </section>     
+                
+            </section>
+            <section class="horastrabalhadas">
+            </section>
+            <footer>
+                <a href="https://github.com/bruno-castilho" target="_blank"> &#169;Bruno da Silva Castilho</a>
+            </footer>
+        </div>   
     </body>  
     <script src="scripts.js"></script>
 </html>
